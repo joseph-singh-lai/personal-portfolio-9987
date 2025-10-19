@@ -9,9 +9,12 @@ interface UseScrollAnimationOptions {
 export const useScrollAnimation = (options: UseScrollAnimationOptions = {}) => {
   const { threshold = 0.1, rootMargin = '0px', triggerOnce = true } = options
   const [isVisible, setIsVisible] = useState(false)
-  const ref = useRef<HTMLElement>(null)
+  const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    const element = ref.current
+    if (!element) return
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -29,17 +32,12 @@ export const useScrollAnimation = (options: UseScrollAnimationOptions = {}) => {
       }
     )
 
-    if (ref.current) {
-      observer.observe(ref.current)
-    }
+    observer.observe(element)
 
     return () => {
-      const currentRef = ref.current
-      if (currentRef) {
-        observer.unobserve(currentRef)
-      }
+      observer.unobserve(element)
     }
-  }, [threshold, rootMargin, triggerOnce, ref])
+  }, [threshold, rootMargin, triggerOnce])
 
   return { ref, isVisible }
 }
