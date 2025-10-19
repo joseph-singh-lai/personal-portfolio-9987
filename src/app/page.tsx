@@ -1,22 +1,19 @@
+import Navigation from '@/components/Navigation'
+import Hero from '@/components/Hero'
+import About from '@/components/About'
+import Projects from '@/components/Projects'
+import Contact from '@/components/Contact'
+import Footer from '@/components/Footer'
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-8">
-          🚀 Joseph Singh - Portfolio (DEPLOYMENT TEST)
-        </h1>
-        <p className="text-lg text-center text-gray-600 dark:text-gray-300">
-          Full-Stack Developer & AI Integration Specialist
-        </p>
-        <div className="mt-8 text-center">
-          <p className="text-gray-500 dark:text-gray-400">
-            Portfolio is loading... Please wait for all components to load.
-          </p>
-          <p className="text-sm text-gray-400 dark:text-gray-500 mt-2">
-            Last updated: {new Date().toLocaleString()}
-          </p>
-        </div>
-      </div>
+      <Navigation />
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
     </main>
   )
 }
