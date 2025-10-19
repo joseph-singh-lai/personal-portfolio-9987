@@ -1,26 +1,121 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html {
+  scroll-behavior: smooth;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Body background for both light and dark modes */
+body {
+  background-color: #ffffff;
+  color: #1f2937;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Dark mode styles */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: #1f2937 !important;
+  color: #f9fafb !important;
+}
+
+/* Selective dark mode overrides */
+.dark nav {
+  background-color: #111827 !important;
+}
+
+.dark .bg-white {
+  background-color: #1f2937 !important;
+}
+
+.dark .bg-gray-50 {
+  background-color: #374151 !important;
+}
+
+.dark .text-gray-900 {
+  color: #f9fafb !important;
+}
+
+.dark .text-gray-600 {
+  color: #d1d5db !important;
+}
+
+.dark .text-gray-700 {
+  color: #e5e7eb !important;
+}
+
+/* Ensure buttons remain visible */
+.dark button {
+  background-color: #3b82f6 !important;
+  color: #ffffff !important;
+  border: 1px solid #1e40af !important;
+}
+
+.dark .bg-blue-500 {
+  background-color: #3b82f6 !important;
+}
+
+.dark .hover\:bg-blue-600:hover {
+  background-color: #2563eb !important;
+}
+
+/* Theme toggle button specific styling */
+.dark .bg-gray-100 {
+  background-color: #374151 !important;
+}
+
+.dark .hover\:bg-gray-200:hover {
+  background-color: #4b5563 !important;
+}
+
+.dark .hover\:bg-gray-700:hover {
+  background-color: #4b5563 !important;
+}
+
+/* Hero section dark mode overrides */
+.dark .bg-gradient-to-br.from-blue-600.via-purple-600.to-indigo-800 {
+  background: linear-gradient(to bottom right, #1f2937, #374151, #111827) !important;
+}
+
+.dark .from-blue-600 {
+  --tw-gradient-from: #1f2937 !important;
+}
+
+.dark .via-purple-600 {
+  --tw-gradient-via: #374151 !important;
+}
+
+.dark .to-indigo-800 {
+  --tw-gradient-to: #111827 !important;
+}
+
+/* About section dark mode */
+.dark .bg-white {
+  background-color: #1f2937 !important;
+}
+
+.dark .bg-gray-50 {
+  background-color: #374151 !important;
+}
+
+.dark .bg-gray-800 {
+  background-color: #1f2937 !important;
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Line clamp utility */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
