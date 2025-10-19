@@ -56,7 +56,7 @@ const Footer = () => {
               })}
             </div>
             <p className="text-gray-500 dark:text-gray-400 text-xs sm:text-sm mt-3 sm:mt-4">
-              Let's connect and build something amazing together!
+              Let&apos;s connect and build something amazing together!
             </p>
           </div>
         </div>

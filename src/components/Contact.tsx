@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin } from 'lucide-react'
 import ScrollAnimation from './ScrollAnimation'
 import AdvancedContactForm from './AdvancedContactForm'
@@ -37,8 +36,8 @@ const Contact = () => {
               Get In <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Touch</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Have a project in mind or want to collaborate? I'd love to hear from you. 
-              Let's discuss how we can work together to bring your ideas to life.
+              Have a project in mind or want to collaborate? I&apos;d love to hear from you. 
+              Let&apos;s discuss how we can work together to bring your ideas to life.
             </p>
           </div>
         </ScrollAnimation>
@@ -47,7 +46,7 @@ const Contact = () => {
           {/* Contact Information */}
           <ScrollAnimation direction="left" delay={0.4}>
             <div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6 sm:mb-8">Let's Connect</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6 sm:mb-8">Let&apos;s Connect</h3>
               <div className="space-y-4 sm:space-y-6">
                 {contactInfo.map((info, index) => (
                   <ScrollAnimation key={info.title} direction="up" delay={0.6 + index * 0.1}>

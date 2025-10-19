@@ -51,7 +51,7 @@ const ContactForm = () => {
         type: 'success', 
         message: 'Thank you! Your message has been sent successfully.' 
       })
-    } catch (error) {
+    } catch {
       setStatus({ 
         type: 'error', 
         message: 'Sorry, there was an error sending your message. Please try again.' 

@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { ExternalLink, Github } from 'lucide-react'
 import ScrollAnimation from './ScrollAnimation'
 
@@ -57,6 +56,7 @@ const Projects = () => {
             <ScrollAnimation key={project.id} direction="up" delay={0.4 + index * 0.2}>
               <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
               <div className="relative overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={project.image}
                   alt={project.title}
