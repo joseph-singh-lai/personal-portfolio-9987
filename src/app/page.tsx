@@ -12,6 +12,9 @@ export default function Home() {
           <p className="text-gray-500 dark:text-gray-400">
             Portfolio is loading... Please wait for all components to load.
           </p>
+          <p className="text-sm text-gray-400 dark:text-gray-500 mt-2">
+            Last updated: {new Date().toLocaleString()}
+          </p>
         </div>
       </div>
     </main>
