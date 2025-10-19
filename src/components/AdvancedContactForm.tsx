@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Send, CheckCircle, AlertCircle, User, Mail, MessageSquare, Tag } from 'lucide-react'
 
@@ -126,7 +126,7 @@ const AdvancedContactForm = () => {
         type: 'success', 
         message: 'Thank you! Your message has been sent successfully.' 
       })
-    } catch (error) {
+    } catch {
       setStatus({ 
         type: 'error', 
         message: 'Sorry, there was an error sending your message. Please try again.' 
@@ -173,7 +173,7 @@ const AdvancedContactForm = () => {
     >
       <div className="mb-6">
         <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-2">Send a Message</h3>
-        <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">I'd love to hear from you. Send me a message and I'll respond as soon as possible.</p>
+        <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">I&apos;d love to hear from you. Send me a message and I&apos;ll respond as soon as possible.</p>
       </div>
       
       <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">

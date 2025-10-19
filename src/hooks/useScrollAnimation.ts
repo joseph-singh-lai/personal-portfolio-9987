@@ -39,7 +39,7 @@ export const useScrollAnimation = (options: UseScrollAnimationOptions = {}) => {
         observer.unobserve(currentRef)
       }
     }
-  }, [threshold, rootMargin, triggerOnce])
+  }, [threshold, rootMargin, triggerOnce, ref])
 
   return { ref, isVisible }
 }

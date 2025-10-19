@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { Code, Database, Cpu, Zap } from 'lucide-react'
 import ScrollAnimation from './ScrollAnimation'
 
@@ -32,17 +31,17 @@ const About = () => {
               <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">My Journey</h3>
               <div className="space-y-3 sm:space-y-4 text-gray-600 dark:text-gray-300 text-sm sm:text-base">
                 <p>
-                  I'm a Full-Stack Developer with over 5 years of experience building scalable web applications 
+                  I&apos;m a Full-Stack Developer with over 5 years of experience building scalable web applications 
                   and integrating cutting-edge AI technologies. My passion lies in creating seamless user experiences 
                   that solve real-world problems.
                 </p>
                 <p>
                   I specialize in modern JavaScript frameworks, cloud architecture, and AI integration. 
-                  I've worked with startups and enterprise companies, helping them leverage technology 
+                  I&apos;ve worked with startups and enterprise companies, helping them leverage technology 
                   to achieve their business goals.
                 </p>
                 <p>
-                  When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
+                  When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing to open-source 
                   projects, or sharing knowledge with the developer community.
                 </p>
               </div>
@@ -71,10 +70,10 @@ const About = () => {
         <ScrollAnimation direction="up" delay={1.2}>
           <div className="mt-12 sm:mt-16 text-center">
             <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-6 sm:p-8">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">Let's Build Something Amazing Together</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">Let&apos;s Build Something Amazing Together</h3>
               <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4 sm:mb-6 max-w-2xl mx-auto">
-                I'm always excited to work on new projects and collaborate with like-minded individuals. 
-                Whether you have a startup idea or need help with an existing project, let's discuss how we can bring your vision to life.
+                I&apos;m always excited to work on new projects and collaborate with like-minded individuals. 
+                Whether you have a startup idea or need help with an existing project, let&apos;s discuss how we can bring your vision to life.
               </p>
               <button 
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
