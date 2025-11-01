@@ -48,7 +48,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-6 sm:mb-8 max-w-3xl mx-auto relative z-10 px-4"
             >
-              Full-Stack Developer & AI Integration Specialist
+              Physics Graduate & Emerging Developer
             </motion.p>
             
             <motion.p
@@ -57,7 +57,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-base sm:text-lg text-gray-300 mb-8 sm:mb-12 max-w-2xl mx-auto relative z-10 px-4"
             >
-              I build modern web applications with Next.js, React, and cutting-edge technologies. Passionate about creating seamless user experiences and integrating AI solutions.
+              Bridging science and technology to create innovative solutions. From laboratory analysis to web development, I bring precision and analytical thinking to every project.
             </motion.p>
 
             <motion.div

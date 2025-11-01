@@ -31,18 +31,19 @@ const About = () => {
               <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">My Journey</h3>
               <div className="space-y-3 sm:space-y-4 text-gray-600 dark:text-gray-300 text-sm sm:text-base">
                 <p>
-                  I&apos;m a Full-Stack Developer with over 5 years of experience building scalable web applications 
-                  and integrating cutting-edge AI technologies. My passion lies in creating seamless user experiences 
-                  that solve real-world problems.
+                  I&apos;m a Physics graduate with a passion for technology and innovation. My foundation in Medical Physics 
+                  and Bioengineering from the University of the West Indies has equipped me with strong analytical skills 
+                  and a deep appreciation for scientific methodology.
                 </p>
                 <p>
-                  I specialize in modern JavaScript frameworks, cloud architecture, and AI integration. 
-                  I&apos;ve worked with startups and enterprise companies, helping them leverage technology 
-                  to achieve their business goals.
+                  Currently working as a Laboratory Technician, I bring precision and attention to detail from environmental 
+                  analysis and quality assurance into my programming work. My journey in web development is self-directed, 
+                  driven by curiosity and the desire to create solutions that make a difference.
                 </p>
                 <p>
-                  When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing to open-source 
-                  projects, or sharing knowledge with the developer community.
+                  From conducting astrophysical research using Python to building web applications, I thrive on bridging 
+                  the gap between scientific rigor and creative problem-solving. When I&apos;m not coding or analyzing data, 
+                  you&apos;ll find me exploring astronomy, playing chess, or continuously learning new technologies.
                 </p>
               </div>
             </div>

@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Joseph Singh - Full Stack Developer",
-  description: "Portfolio of Joseph Singh, a Full-Stack Developer & AI Integration Specialist",
+  title: "Joseph Singh - Physics Graduate & Developer",
+  description: "Portfolio of Joseph Singh, a Physics graduate specializing in Medical Physics and Bioengineering, currently exploring web development and technology",
 };
 
 export default function RootLayout({
