@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react'
+import { ChevronDown, Linkedin, Mail } from 'lucide-react'
 import ScrollAnimation from './ScrollAnimation'
 
 const Hero = () => {
@@ -76,22 +76,13 @@ const Hero = () => {
               
               <div className="flex gap-3 sm:gap-4 justify-center">
                 <a
-                  href="https://github.com/josephsingh"
+                  href="https://www.linkedin.com/in/joseph-singh-90a87b161/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-white/20 dark:bg-gray-800/30 backdrop-blur-sm hover:bg-white/30 dark:hover:bg-gray-700/50 rounded-lg border border-white/30 dark:border-gray-600/50 transition-all duration-200"
-                  aria-label="GitHub"
-                >
-                  <Github size={20} className="text-white dark:text-blue-400 sm:w-6 sm:h-6" />
-                </a>
-                <a
-                  href="https://linkedin.com/in/josephsingh"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 bg-white/20 dark:bg-gray-800/30 backdrop-blur-sm hover:bg-white/30 dark:hover:bg-gray-700/50 rounded-lg border border-white/30 dark:border-gray-600/50 transition-all duration-200"
+                  className="p-3 bg-white/20 backdrop-blur-sm hover:bg-white/30 rounded-lg border border-white/30 transition-all duration-200"
                   aria-label="LinkedIn"
                 >
-                  <Linkedin size={20} className="text-white dark:text-blue-400 sm:w-6 sm:h-6" />
+                  <Linkedin size={20} className="text-white sm:w-6 sm:h-6" />
                 </a>
               </div>
             </motion.div>
