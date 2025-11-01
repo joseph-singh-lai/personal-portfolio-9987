@@ -16,13 +16,13 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      details: '+1(868)381-4539',
+      href: 'tel:+18683814539'
     },
     {
       icon: MapPin,
       title: 'Location',
-      details: 'San Francisco, CA',
+      details: 'Point Fortin, Trinidad and Tobago',
       href: '#'
     }
   ]
