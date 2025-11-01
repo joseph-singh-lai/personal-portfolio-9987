@@ -36,9 +36,9 @@ const About = () => {
                   and a deep appreciation for scientific methodology.
                 </p>
                 <p>
-                  Currently working as a Laboratory Technician, I bring precision and attention to detail from environmental 
-                  analysis and quality assurance into my programming work. My journey in web development is self-directed, 
-                  driven by curiosity and the desire to create solutions that make a difference.
+                  My experience in laboratory work has taught me precision and attention to detail, which I bring into 
+                  my programming projects. My journey in web development is self-directed, driven by curiosity and 
+                  the desire to create solutions that make a difference.
                 </p>
                 <p>
                   From conducting astrophysical research using Python to building web applications, I thrive on bridging 
