@@ -92,21 +92,9 @@ body {
   background-color: #4b5563 !important;
 }
 
-/* Hero section dark mode overrides */
-.dark .bg-gradient-to-br.from-blue-600.via-purple-600.to-indigo-800 {
-  background: linear-gradient(to bottom right, #1f2937, #374151, #111827) !important;
-}
-
-.dark .from-blue-600 {
-  --tw-gradient-from: #1f2937 !important;
-}
-
-.dark .via-purple-600 {
-  --tw-gradient-via: #374151 !important;
-}
-
-.dark .to-indigo-800 {
-  --tw-gradient-to: #111827 !important;
+/* Hero section dark mode overrides - deep space theme */
+.dark #home {
+  background: linear-gradient(to bottom right, #000000, #0f172a, #1e1b4b) !important;
 }
 
 /* About section dark mode */
@@ -136,4 +124,41 @@ body {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* Starfield effect for Hero section */
+.starfield {
+  background-image: 
+    radial-gradient(2px 2px at 20% 30%, white, transparent),
+    radial-gradient(2px 2px at 60% 70%, white, transparent),
+    radial-gradient(1px 1px at 50% 50%, white, transparent),
+    radial-gradient(1px 1px at 80% 10%, white, transparent),
+    radial-gradient(2px 2px at 90% 60%, white, transparent),
+    radial-gradient(1px 1px at 33% 80%, white, transparent),
+    radial-gradient(1px 1px at 15% 50%, white, transparent),
+    radial-gradient(2px 2px at 40% 20%, white, transparent),
+    radial-gradient(1px 1px at 70% 90%, white, transparent),
+    radial-gradient(1px 1px at 25% 15%, white, transparent),
+    radial-gradient(2px 2px at 85% 40%, white, transparent),
+    radial-gradient(1px 1px at 55% 75%, white, transparent),
+    radial-gradient(1px 1px at 10% 65%, white, transparent),
+    radial-gradient(2px 2px at 75% 25%, white, transparent),
+    radial-gradient(1px 1px at 45% 85%, white, transparent);
+  background-repeat: repeat;
+  background-size: 200% 200%;
+  animation: starfield 20s linear infinite;
+  opacity: 0.6;
+}
+
+.dark .starfield {
+  opacity: 0.8;
+}
+
+@keyframes starfield {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }
