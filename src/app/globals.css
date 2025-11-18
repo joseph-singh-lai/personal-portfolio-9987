@@ -53,6 +53,24 @@ body {
   border: 1px solid #1e40af !important;
 }
 
+/* Ensure anchor tags in Hero section match button styling in dark mode */
+.dark #home a[aria-label="GitHub"],
+.dark #home a[aria-label="LinkedIn"] {
+  background-color: #3b82f6 !important;
+  color: #ffffff !important;
+  border: 1px solid #1e40af !important;
+}
+
+.dark #home a[aria-label="GitHub"]:hover,
+.dark #home a[aria-label="LinkedIn"]:hover {
+  background-color: #2563eb !important;
+}
+
+.dark #home a[aria-label="GitHub"] svg,
+.dark #home a[aria-label="LinkedIn"] svg {
+  color: #ffffff !important;
+}
+
 .dark .bg-blue-500 {
   background-color: #3b82f6 !important;
 }
