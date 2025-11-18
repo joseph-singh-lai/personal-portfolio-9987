@@ -5,7 +5,7 @@ const Footer = () => {
     { name: 'GitHub', href: 'https://github.com/joseph-singh-lai/', icon: Github },
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/joseph-singh-90a87b161/', icon: Linkedin },
     { name: 'Email', href: 'mailto:singhjoe57@gmail.com', icon: Mail },
-    { name: 'Twitter', href: 'https://twitter.com/josephsingh', icon: Twitter },
+    { name: 'Twitter', href: 'https://x.com/josephsingh9987', icon: Twitter },
   ]
 
   return (
