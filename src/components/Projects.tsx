@@ -10,6 +10,7 @@ const Projects = () => {
       title: "Astronomy for the Visually Impaired",
       description: "A research project investigating accessibility and availability of resources for visually impaired or blind individuals learning astronomy. This work explored the creation of an accessible Hertzsprung-Russell (HR) diagram and proposed innovative solutions to make tertiary-level astronomy education more interactive and inclusive. The project examined disparities in STEM education and identified feasible approaches to accommodate visual disabilities while generating greater interest in astronomical studies.",
       pdfUrl: "/astronomy-visually-impaired.pdf",
+      image: "/project-image.jpg",
       technologies: ["Astronomy", "Accessibility", "STEM Education", "Research", "Inclusive Design"],
       featured: true
     }
@@ -34,10 +35,13 @@ const Projects = () => {
             {projects.map((project, index) => (
               <ScrollAnimation key={project.id} direction="up" delay={0.4 + index * 0.2}>
                 <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
-                  <div className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700">
-                    <div className="flex items-center justify-center h-40 sm:h-48">
-                      <FileText size={64} className="text-blue-600 dark:text-blue-400 opacity-50" />
-                    </div>
+                  <div className="relative overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-40 sm:h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                     {project.featured && (
                       <div className="absolute top-4 left-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                         Featured
