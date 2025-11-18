@@ -2,9 +2,9 @@ import { Github, Linkedin, Mail, Twitter } from 'lucide-react'
 
 const Footer = () => {
   const socialLinks = [
-    { name: 'GitHub', href: 'https://github.com/josephsingh', icon: Github },
-    { name: 'LinkedIn', href: 'https://linkedin.com/in/josephsingh', icon: Linkedin },
-    { name: 'Email', href: 'mailto:joseph@example.com', icon: Mail },
+    { name: 'GitHub', href: 'https://github.com/joseph-singh-lai/', icon: Github },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/joseph-singh-90a87b161/', icon: Linkedin },
+    { name: 'Email', href: 'mailto:singhjoe57@gmail.com', icon: Mail },
     { name: 'Twitter', href: 'https://twitter.com/josephsingh', icon: Twitter },
   ]
 
@@ -20,7 +20,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Joseph Singh</h3>
             <p className="text-gray-400 dark:text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">
-              Full-stack developer passionate about creating amazing digital experiences with modern technologies.
+              Physics graduate with a passion for technology and innovation. Bridging science and technology to create innovative solutions through self-directed learning in web development.
             </p>
             <p className="text-gray-500 dark:text-gray-400 text-xs sm:text-sm">
               Available for freelance projects and collaborations.
