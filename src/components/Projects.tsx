@@ -17,8 +17,12 @@ const Projects = () => {
   ]
 
   return (
-    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="py-20 bg-gradient-to-b from-slate-50 to-gray-100 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-950 relative overflow-hidden">
+      {/* Subtle starfield */}
+      <div className="absolute inset-0 starfield-subtle opacity-25 dark:opacity-35"></div>
+      {/* Nebula overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/40 via-transparent to-indigo-50/40 dark:from-blue-950/25 dark:via-transparent dark:to-indigo-950/25"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <ScrollAnimation direction="up" delay={0.2}>
           <div className="text-center mb-12 sm:mb-16 px-4">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">

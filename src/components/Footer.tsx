@@ -9,8 +9,12 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-gray-900 dark:bg-gray-950 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+    <footer className="bg-gradient-to-b from-slate-950 via-indigo-950 to-black dark:from-black dark:via-slate-950 dark:to-indigo-950 text-white relative overflow-hidden">
+      {/* Subtle starfield */}
+      <div className="absolute inset-0 starfield-subtle opacity-15 dark:opacity-25"></div>
+      {/* Nebula overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/20 via-transparent to-purple-900/20 dark:from-indigo-950/30 dark:via-transparent dark:to-purple-950/30"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {/* Brand */}
           <div>

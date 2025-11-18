@@ -28,8 +28,12 @@ const Contact = () => {
   ]
 
   return (
-    <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-20 bg-gradient-to-b from-gray-100 to-slate-100 dark:from-indigo-950 dark:via-slate-900 dark:to-slate-950 relative overflow-hidden">
+      {/* Subtle starfield */}
+      <div className="absolute inset-0 starfield-subtle opacity-20 dark:opacity-30"></div>
+      {/* Nebula overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-50/30 via-transparent to-pink-50/30 dark:from-purple-950/20 dark:via-transparent dark:to-pink-950/20"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <ScrollAnimation direction="up" delay={0.2}>
           <div className="text-center mb-12 sm:mb-16 px-4">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">

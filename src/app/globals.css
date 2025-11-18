@@ -162,3 +162,35 @@ body {
     background-position: 100% 100%;
   }
 }
+
+/* Subtle starfield for other sections */
+.starfield-subtle {
+  background-image: 
+    radial-gradient(1px 1px at 25% 35%, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(1px 1px at 55% 65%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(0.5px 0.5px at 45% 45%, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(0.5px 0.5px at 75% 15%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 85% 55%, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(0.5px 0.5px at 30% 75%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(0.5px 0.5px at 10% 45%, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(1px 1px at 65% 25%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(0.5px 0.5px at 50% 85%, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(0.5px 0.5px at 20% 10%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 90% 35%, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(0.5px 0.5px at 40% 60%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(0.5px 0.5px at 15% 70%, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(1px 1px at 80% 20%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(0.5px 0.5px at 60% 90%, rgba(255, 255, 255, 0.8), transparent);
+  background-repeat: repeat;
+  background-size: 300% 300%;
+  animation: starfield-subtle 30s linear infinite;
+}
+
+@keyframes starfield-subtle {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
